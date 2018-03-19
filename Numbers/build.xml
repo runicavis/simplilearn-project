@@ -21,7 +21,8 @@
    </target>
    <target name="test" depends="compile">
       <junit printsummary="yes" haltonfailure="yes">
-        <classpath refid="class.path"/>
+        <echo "inTest"/>
+         <classpath refid="class.path"/>
         <classpath location="bin"/>
         <formatter type="plain"/>
         <batchtest fork="yes" todir="report">
